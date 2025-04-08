@@ -27,7 +27,7 @@ from IPython.display import display as ipython_display
 
 ---
 
-### 2. EDA 및 시각화 함수수
+### 2. EDA 함수
 ```python
 def println(*args, **kwargs):
     print(*args, **kwargs)
@@ -335,7 +335,7 @@ gen_histograms_and_tables(
 
 - `print_distr()`는 특정 컬럼에 대해 값별로 몇 개가 있는지, 그리고 그 비율(%)을 출력해줌. EDA에서 범주형 변수 분포 볼 때 유용함.
 - `print_nans()`는 -1로 결측치 표시된 경우를 찾아서 train/test 각각 몇 개 있는지 출력함. 퍼센트까지 계산해줌.
-- `gen_histograms_and_tables()`는 히스토그램과 테이블을 그려주는 함수로 추정됨. 시각화 + 통계적 요약용.
+- `gen_histograms_and_tables()`는 히스토그램과 테이블을 그려주는 함수. 시각화 + 통계적 요약용.
 
 ---
 
@@ -511,3 +511,6 @@ plt.show()
 
 ### 느낀점, 깨달은 점
 코드가 너무 가독성 떨어져서 읽기 힘들고, 흐름을 파악하지 못하겠음.. ㅠㅠ
+
+## 스터디 후
+- kaggle api 가져와서 연동하면 자동으로 kaggle 점수도 나옴.
